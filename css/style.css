@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0d192b;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+body .attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  background-color: #14253d;
+  box-shadow: 5px 14px 15px #0c1527, -5px 0px 15px #0e172a;
+  border-radius: 15px;
+  width: 340px;
+}
+.container .equilibrium-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.container .top-equilibrium .equlibrium-img {
+  position: relative;
+  border-radius: 15px;
+}
+.container .top-equilibrium .equlibrium-img:hover .overlay {
+  transition: 0.5s ease;
+  visibility: visible;
+  width: 100%;
+  cursor: pointer;
+}
+.container .top-equilibrium .equlibrium-img .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 99%;
+  visibility: hidden;
+  background-color: rgba(0, 255, 247, 0.623);
+  background-image: url("../img/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 15px;
+}
+.container .top-equilibrium .equlibrium-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.bottom-equilibrium hr {
+  width: 100%;
+  height: 0.1em;
+  background-color: #8bacda;
+  margin: 1.5rem 0;
+  border: none;
+  outline: none;
+}
+.bottom-equilibrium .title {
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  font-size: 22px;
+  color: #fff;
+  margin: 1rem 0;
+  transition: 0.5s ease;
+}
+.bottom-equilibrium .title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+.bottom-equilibrium .para {
+  color: #8bacda;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.bottom-equilibrium .equilibrium-period {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.bottom-equilibrium .equilibrium-period span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8bacda;
+}
+.bottom-equilibrium .equilibrium-period img {
+  margin-right: 0.4rem;
+}
+.bottom-equilibrium .equilibrium-period .equilibrium-rate {
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  font-weight: 600;
+}
+.bottom-equilibrium .equilibrium-period .equilibrium-rate img {
+  padding-right: 0.6rem;
+}
+.bottom-equilibrium .author-container {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-equilibrium .author-container:hover .img-box {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.bottom-equilibrium .author-container .img-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.bottom-equilibrium .author-container .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bottom-equilibrium .author-container .author {
+  color: #8bacda;
+  font-weight: 600;
+}
+.bottom-equilibrium .author-container .span {
+  color: white;
+  transition: 0.5s ease;
+}
+.bottom-equilibrium .author-container .span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 330px;
+  }
+  .container .top-equilibrium .equlibrium-img {
+    padding: 0rem;
+    width: 300px;
+    height: 300px;
+  }
+  .container .top-equilibrium .equlibrium-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .top-equilibrium .equlibrium-img .overlay {
+    height: 100%;
+  }
+  .container .bottom-equilibrium .title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+  .container .bottom-equilibrium .para {
+    font-size: 15px;
+  }
+  .container .bottom-equilibrium .equilibrium-period .equilibrium-rate {
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=style.css.map */
