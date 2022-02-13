@@ -10,16 +10,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #0d192b;
 }
-body .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-body .attribution a {
-  color: #3e52a3;
-}
+
 
 .container {
   background-color: #14253d;
